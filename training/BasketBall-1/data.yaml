@@ -1,0 +1,16 @@
+names:
+- ball
+- made
+- person
+- rim
+- shoot
+nc: 5
+roboflow:
+  license: CC BY 4.0
+  project: basketball-bs0zc
+  url: https://universe.roboflow.com/test-datset/basketball-bs0zc/dataset/1
+  version: 1
+  workspace: test-datset
+test: ../test/images
+train: BasketBall-1/train/images
+val: BasketBall-1/valid/images
