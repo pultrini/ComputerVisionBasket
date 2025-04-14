@@ -13,8 +13,11 @@ def main():
 
     tracks = tracker.get_objects_track(video_frames, read_from_stub=True, stub_path='stubs/tracks_stubbs.pk1')
 
+    #Draw object Tracks
+    output_video_frames = tracker.draw_annotations(video_frames, tracks)
+
     #save video
-    save_videos(video_frames, 'output_videos/output_video.avi')
+    save_videos(output_video_frames, 'output_videos/output_video.avi')
 
 
 if __name__ == '__main__':
