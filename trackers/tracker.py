@@ -59,7 +59,7 @@ class Tracker:
 
         return tracks
     
-    def draw_elipse(self, frame, bbox, color, track_id=None):
+    def draw_ellipse(self, frame, bbox, color, track_id=None):
         y2 = int(bbox[3])
         x_center, _ = get_center_of_bbox(bbox)
         width = get_bbox_width(bbox)
@@ -97,7 +97,7 @@ class Tracker:
             cv2.putText(
                 frame,
                 f"{track_id}",
-                (int(x1_text, int(y1_rect+15))),
+                    (int(x1_text), int(y1_rect+15)),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.6,
                 (0,0,0),
